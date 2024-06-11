@@ -3,6 +3,8 @@ import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
+import PageContainer from "@/components/PageContainer";
+import Header from "@/components/Header";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -28,7 +30,13 @@ export default function RootLayout({
           "font-sans h-full bg-background text-foreground"
         )}
       >
-        {children}
+        <div className="flex flex-col justify-between min-h-screen">
+          <PageContainer>
+            <Header />
+          </PageContainer>
+          {/* flex grow = pour que les composant prennent le maximum de place sur l'écran */}
+          <div className="flex-grow">{children}</div>
+        </div>
       </body>
     </html>
   );

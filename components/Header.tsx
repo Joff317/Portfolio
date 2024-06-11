@@ -1,27 +1,34 @@
-import Link from "next/link";
-import { Section } from "./Section";
-import { GithubIcon } from "./icons/GithubIcon";
-import { Button, buttonVariants } from "./ui/button";
-import { cn } from "@/lib/utils";
+import React from "react";
+import PageContainer from "./PageContainer";
+import HeaderNavigation from "./HeaderNavigation";
 
-export const Header = () => {
+export default function Header() {
   return (
-    <header className="sticky top-0 justify-center items-center py-4">
-      <Section className="flex items-baseline">
-        <h1 className="text-lg font-bold">JoDev</h1>
-        <div className="flex-1" />
-        <ul>
-          <Link
-            href="https://github.com/Joff317"
-            className={cn(
-              buttonVariants({ variant: "outline" }),
-              "size-6 p-0 hover:bg-inherit"
-            )}
-          >
-            <GithubIcon size={16} className="text-foreground" />
-          </Link>
-        </ul>
-      </Section>
+    <header className="py-4">
+      <PageContainer>
+        <div className="flex items-center justify-between w-full">
+          <div className="flex items-center gap-2">
+            {/* Responsive Menu */}
+            <h1
+              className="text-2xl font-bold"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to bottom right, #af58d8, #4242ac)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              JoDev
+            </h1>
+          </div>
+
+          {/* Navigation shadcn */}
+          <HeaderNavigation />
+
+          {/* Buttons */}
+        </div>
+      </PageContainer>
     </header>
   );
-};
+}
