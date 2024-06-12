@@ -8,7 +8,7 @@ export default function SkillsSection() {
         <div>
           <h2 className="text-4xl px-4 mt-2">Front-end</h2>
           <div className="p-2">
-            <ul className="px-4 text-3xl font-light flex flex-col gap-3">
+            <ul className="px-4 text-3xl font-light flex flex-col gap-4">
               <li>Javascript</li>
               <li>React.js</li>
               <li>Next.js</li>
@@ -20,7 +20,7 @@ export default function SkillsSection() {
         <div>
           <h2 className="text-4xl px-4 mt-2">Back-end</h2>
           <div className="p-2">
-            <ul className="px-4 text-3xl font-light flex flex-col gap-3">
+            <ul className="px-4 text-3xl font-light flex flex-col gap-4">
               <li>Node.Js</li>
               <li>Mongo DB</li>
               <li>Prisma</li>
@@ -30,7 +30,7 @@ export default function SkillsSection() {
         <div>
           <h2 className="text-4xl px-4 mt-2">Tools</h2>
           <div className="p-2">
-            <ul className="px-4 text-3xl font-light flex flex-col gap-3">
+            <ul className="px-4 text-3xl font-light flex flex-col gap-4">
               <li>Github</li>
               <li>GitLab</li>
               <li>Figma</li>
