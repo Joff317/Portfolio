@@ -1,6 +1,6 @@
 import { ComponentProps, ComponentPropsWithoutRef } from "react";
 
-export const NextIcon = (
+export const NodeIcon = (
   props: ComponentPropsWithoutRef<"svg"> & { size?: number }
 ) => {
   return (
