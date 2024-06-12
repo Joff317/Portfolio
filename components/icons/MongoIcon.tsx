@@ -5,8 +5,8 @@ export const MongoIcon = (
 ) => {
   return (
     <svg
-      width="256px"
-      height="549px"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 549"
       version="1.1"
       preserveAspectRatio="xMidYMid"

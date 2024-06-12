@@ -1,6 +1,12 @@
 import PageContainer from "./PageContainer";
+import { FigmaIcon } from "./icons/FigmaIcon";
+import { GitLabIcon } from "./icons/GitLabIcon";
+import { GithubIcon } from "./icons/GithubIcon";
 import { JavaScriptIcon } from "./icons/JavascriptIcon";
+import { MongoIcon } from "./icons/MongoIcon";
 import { NextIcon } from "./icons/NextIcon";
+import { NodeIcon } from "./icons/NodeIcon";
+import { PrismaIcon } from "./icons/PrismaIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TailwindIcon } from "./icons/TailwindIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
@@ -51,9 +57,24 @@ export default function SkillsSection() {
           <h2 className="text-4xl px-4 mt-2">Back-end</h2>
           <div className="p-2">
             <ul className="px-4 text-3xl font-light flex flex-col gap-4">
-              <li>Node.Js</li>
-              <li>Mongo DB</li>
-              <li>Prisma</li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <NodeIcon size={20} />
+                  <p>Node.Js</p>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <MongoIcon size={20} />
+                  <p>MongoDB</p>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <PrismaIcon size={20} />
+                  <p>Prisma</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,9 +82,24 @@ export default function SkillsSection() {
           <h2 className="text-4xl px-4 mt-2">Tools</h2>
           <div className="p-2">
             <ul className="px-4 text-3xl font-light flex flex-col gap-4">
-              <li>Github</li>
-              <li>GitLab</li>
-              <li>Figma</li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <GithubIcon size={20} />
+                  <p>Github</p>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <GitLabIcon size={20} />
+                  <p>GitLab</p>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2">
+                  <FigmaIcon size={20} />
+                  <p>Figma</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
