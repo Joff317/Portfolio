@@ -14,7 +14,9 @@ import SkillsSectionMobile from "@/components/SkillsSectionMobile";
 export default function Home() {
   return (
     <PageContainer className="p-4">
-      <HeroSection />
+      <div className="h-[300px] mt-8">
+        <HeroSection />
+      </div>
 
       <div className="max-md:hidden">
         <SkillsSection />
