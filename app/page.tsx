@@ -9,13 +9,20 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
+import SkillsSectionMobile from "@/components/SkillsSectionMobile";
 
 export default function Home() {
   return (
     <PageContainer className="p-4">
-      <HeroSection/>
-      
-      <SkillsSection/>
+      <HeroSection />
+
+      <div className="max-md:hidden">
+        <SkillsSection />
+      </div>
+
+      <div className="md:hidden">
+        <SkillsSectionMobile />
+      </div>
     </PageContainer>
   );
 }
