@@ -8,11 +8,14 @@ import businessman from "../public/businessman.png";
 import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
     <PageContainer className="p-4">
       <HeroSection/>
+      
+      <SkillsSection/>
     </PageContainer>
   );
 }
