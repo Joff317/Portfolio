@@ -15,8 +15,8 @@ export default function Project() {
     <PageContainer className="mt-20 px-4">
       <p className="text-5xl">Project</p>
 
-      <div className="mt-4 px-3 flex flex-row justify-between gap-3">
-         {/* Première carte */}
+      <div className="mt-4 px-3 flex md:flex-row md:justify-between gap-3 flex-col max-md:items-center max-md:px-2">
+        {/* Première carte */}
         <SpacerCard />
 
         {/* Deuxième carte */}

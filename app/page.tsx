@@ -14,21 +14,21 @@ import Project from "@/components/Project";
 
 export default function Home() {
   return (
-    <PageContainer className="p-4">
-      <div className="h-[300px] mt-8">
+    <PageContainer className="p-4 flex flex-col">
+      <div className="mt-8">
         <HeroSection />
       </div>
 
-      <div className="max-md:hidden">
+      <div className="max-md:hidden mt-8">
         <SkillsSection />
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden mt-8">
         <SkillsSectionMobile />
       </div>
 
       <div className="mb-12">
-        <Project/>
+        <Project />
       </div>
     </PageContainer>
   );

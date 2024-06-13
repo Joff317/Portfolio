@@ -11,7 +11,7 @@ import { TailwindIcon } from "../icons/TailwindIcon";
 
 export default function SpacerCard() {
   return (
-    <div className="w-[350px] bg-bluecard border-slate-950 border-2 shadow-md rounded-xl h-full">
+    <div className="w-[350px] max-sm:w-[250px] bg-bluecard border-slate-950 border-2 shadow-md rounded-xl h-full">
       <CardHeader className="flex flex-row justify-between">
         <CardTitle className="text-2xl text-white">🛸</CardTitle>
         <CardDescription className="text-white">icon</CardDescription>
