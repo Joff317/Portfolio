@@ -14,7 +14,7 @@ import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 export default function SkillsSection() {
   return (
     <PageContainer className="mt-20 px-4">
-      <h1 className="text-5xl">Skills</h1>
+      <p className="text-5xl">Skills</p>
       <div className="mt-4 flex flex-row justify-between">
         <div>
           <h2 className="text-4xl px-4 mt-2">Front-end</h2>
