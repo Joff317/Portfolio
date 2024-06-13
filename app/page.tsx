@@ -27,7 +27,7 @@ export default function Home() {
         <SkillsSectionMobile />
       </div>
 
-      <div>
+      <div className="mb-12">
         <Project/>
       </div>
     </PageContainer>
