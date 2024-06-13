@@ -10,6 +10,7 @@ import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import SkillsSectionMobile from "@/components/SkillsSectionMobile";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
 
       <div className="md:hidden">
         <SkillsSectionMobile />
+      </div>
+
+      <div className="mb-12">
+        <Project/>
       </div>
     </PageContainer>
   );
