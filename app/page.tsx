@@ -11,6 +11,7 @@ import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import SkillsSectionMobile from "@/components/SkillsSectionMobile";
 import Project from "@/components/Project";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -29,6 +30,10 @@ export default function Home() {
 
       <div className="mb-12">
         <Project />
+      </div>
+
+      <div>
+        <Contact/>
       </div>
     </PageContainer>
   );
