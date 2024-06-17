@@ -1,12 +1,18 @@
-// import nodemailer from "nodemailer";
+"use server";
 
-// export interface EmailData {
-//   name: string;
-//   email: string;
-//   message: string;
-// }
-// export default function sendEmail({
-//   name,
-//   email,
-//   message,
-// }: EmailData): Promise<boolean> {}
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export const sendEmail = async (formData: FormData) => {
+  console.log("Running on server");
+  console.log(formData.get("senderEmail"));
+  console.log(formData.get("message"));
+
+  resend.emails.send({
+    from: "onboarding@resend.dev",
+    to: "j.freixanet@hotmail.com",
+    subject: "Message from contact form",
+    text: "hello world",
+  });
+};
