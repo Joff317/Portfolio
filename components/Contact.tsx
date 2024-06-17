@@ -1,6 +1,7 @@
 "use client";
 import PageContainer from "./PageContainer";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
 export default function Contact() {
   return (
@@ -8,11 +9,20 @@ export default function Contact() {
       <p>Contact</p>
 
       <form>
-        <Input type="email" placeholder="enter your mail" />
+        <Input
+          type="email"
+          name="userEmail"
+          placeholder="enter your mail"
+          required
+        />
 
-        <Input type="text" placeholder="enter the subject of your mail" />
+        <Textarea
+          name="userMessage"
+          placeholder="enter your message"
+          required
+        />
 
-        
+        <button>Submit</button>
       </form>
     </PageContainer>
   );
