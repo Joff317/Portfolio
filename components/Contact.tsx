@@ -4,6 +4,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Button } from "./ui/button";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -34,31 +35,38 @@ export default function Contact() {
 
   return (
     <PageContainer>
-      <p>Contact</p>
+      <p className="text-5xl">Contact</p>
 
-      <form ref={form} onSubmit={sendEmail}>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="mx-auto flex flex-col gap-5 max-w-[700px] justify-center items-center mt-4 px-12"
+      >
         <Input
           type="text"
           name="user_name"
-          placeholder="enter your Name"
+          placeholder="Enter your Name"
           required
+          className=""
         />
         <Input
           type="email"
           name="user_email"
-          placeholder="enter your mail"
+          placeholder="Enter your mail"
           required
+          className=""
         />
         <Input
           type="text"
           name="subject"
-          placeholder="enter your subject"
+          placeholder="Enter your subject"
           required
+          className=""
         />
 
-        <Textarea name="message" placeholder="enter your message" required />
+        <Textarea name="message" placeholder="Enter your message" required  className="" />
 
-        <button type="submit">Submit</button>
+        <Button type="submit" className=" bg-blue-400 hover:bg-blue-300">Submit</Button>
       </form>
     </PageContainer>
   );
