@@ -2,12 +2,13 @@
 import PageContainer from "./PageContainer";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,6 +26,11 @@ export default function Contact() {
         .then(
           () => {
             console.log("SUCCESS!");
+            setIsSuccess(true);
+            if (form.current) {
+              form.current.reset();
+            }
+            setTimeout(() => setIsSuccess(false), 3000); // Masquer la popup après 3 secondes
           },
           (error) => {
             console.log("FAILED...", error.text);
@@ -64,10 +70,23 @@ export default function Contact() {
           className=""
         />
 
-        <Textarea name="message" placeholder="Enter your message" required  className="" />
+        <Textarea
+          name="message"
+          placeholder="Enter your message"
+          required
+          className=""
+        />
 
-        <Button type="submit" className=" bg-blue-400 hover:bg-blue-300">Submit</Button>
+        <Button type="submit" className=" bg-blue-400 hover:bg-blue-300">
+          Submit
+        </Button>
       </form>
+
+      {isSuccess && (
+        <div className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded-md shadow-md">
+          Email sent successfully!
+        </div>
+      )}
     </PageContainer>
   );
 }
