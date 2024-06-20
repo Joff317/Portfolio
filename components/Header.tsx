@@ -15,7 +15,7 @@ export default function Header() {
               className="text-2xl font-bold"
               style={{
                 backgroundImage:
-                  "linear-gradient(to bottom right, #af58d8, #4242ac)",
+                  "linear-gradient(to bottom right, #af58d8, #18184f)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",

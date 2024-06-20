@@ -9,7 +9,6 @@ export const NextIcon = (
       height={props.size}
       viewBox="0 0 256 256"
       version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
     >
       <title>Next.js</title>
@@ -22,18 +21,18 @@ export const NextIcon = (
           y2="96.0801119%"
           id="nextjsLinearGradient-3"
         >
-          <stop stop-color="#FFFFFF" offset="0%"></stop>
-          <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+          <stop stopColor="#FFFFFF" offset="0%"></stop>
+          <stop stopColor="#FFFFFF" stopOpacity="0" offset="100%"></stop>
         </linearGradient>
         <linearGradient
           x1="50%"
           y1="0%"
           x2="49.9534722%"
           y2="73.4375%"
-          id="nextjsLinearGradient-4"
+          id="nextjsGradient"
         >
-          <stop stop-color="#FFFFFF" offset="0%"></stop>
-          <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+          <stop stopColor="#FFFFFF" offset="0%"></stop>
+          <stop stopColor="#FFFFFF" stopOpacity="0" offset="100%"></stop>
         </linearGradient>
       </defs>
       <g>
@@ -44,7 +43,7 @@ export const NextIcon = (
             fill="url(#nextjsLinearGradient-3)"
           ></path>
           <rect
-            fill="url(#nextjsLinearGradient-4)"
+            fill="url(#nextjsGradient)"
             x="163.555556"
             y="76.8"
             width="17.0666667"
