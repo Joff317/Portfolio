@@ -24,7 +24,7 @@ export const NextIcon = (
           <stop stopColor="#FFFFFF" offset="0%"></stop>
           <stop stopColor="#FFFFFF" stopOpacity="0" offset="100%"></stop>
         </linearGradient>
-        {/* <linearGradient
+        <linearGradient
           x1="50%"
           y1="0%"
           x2="49.9534722%"
@@ -33,7 +33,7 @@ export const NextIcon = (
         >
           <stop stopColor="#FFFFFF" offset="0%"></stop>
           <stop stopColor="#FFFFFF" stopOpacity="0" offset="100%"></stop>
-        </linearGradient> */}
+        </linearGradient>
       </defs>
       <g>
         <g mask="url(#mask-2)">

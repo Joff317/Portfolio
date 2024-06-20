@@ -10,6 +10,13 @@ import { ReactIcon } from "./icons/ReactIcon";
 import { NextIcon } from "./icons/NextIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 import { TailwindIcon } from "./icons/TailwindIcon";
+import Image from "next/image";
+import { NodeIcon } from "./icons/NodeIcon";
+import { MongoIcon } from "./icons/MongoIcon";
+import { PrismaIcon } from "./icons/PrismaIcon";
+import { GithubIcon } from "./icons/GithubIcon";
+import { FigmaIcon } from "./icons/FigmaIcon";
+import { GitLabIcon } from "./icons/GitLabIcon";
 
 export default function SkillsSectionMobile() {
   return (
@@ -36,7 +43,12 @@ export default function SkillsSectionMobile() {
                 </li>
                 <li>
                   <div className="flex items-center gap-2">
-                    <NextIcon size={20} />
+                    <Image
+                      src="/communityIcon_nsrozhr9igl91.webp"
+                      alt="Next icon"
+                      width={20}
+                      height={20}
+                    />
                     <p>Next.js</p>
                   </div>
                 </li>
@@ -48,7 +60,7 @@ export default function SkillsSectionMobile() {
                 </li>
                 <li>
                   <div className="flex items-center gap-2">
-                    <TailwindIcon size={24} />
+                    <TailwindIcon size={20} />
                     <p>Tailwind</p>
                   </div>
                 </li>
@@ -65,9 +77,24 @@ export default function SkillsSectionMobile() {
           <AccordionContent>
             <div className="p-2">
               <ul className="px-4 text-xl font-light flex flex-col gap-3">
-                <li>Node.Js</li>
-                <li>Mongo DB</li>
-                <li>Prisma</li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <NodeIcon size={20} />
+                    <p>Node.Js</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <MongoIcon size={20} />
+                    <p>MongoDB</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <PrismaIcon size={20} />
+                    <p>Prisma</p>
+                  </div>
+                </li>
               </ul>
             </div>
           </AccordionContent>
@@ -81,9 +108,24 @@ export default function SkillsSectionMobile() {
           <AccordionContent>
             <div className="p-2">
               <ul className="px-4 text-xl font-light flex flex-col gap-3">
-                <li>Github</li>
-                <li>GitLab</li>
-                <li>Figma</li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <GithubIcon size={20} />
+                    <p>Github</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <GitLabIcon size={20} />
+                    <p>GitLab</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <FigmaIcon size={20} />
+                    <p>Figma</p>
+                  </div>
+                </li>
               </ul>
             </div>
           </AccordionContent>
