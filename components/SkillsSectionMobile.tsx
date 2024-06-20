@@ -5,6 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { JavaScriptIcon } from "./icons/JavascriptIcon";
+import { ReactIcon } from "./icons/ReactIcon";
+import { NextIcon } from "./icons/NextIcon";
+import { TypeScriptIcon } from "./icons/TypeScriptIcon";
+import { TailwindIcon } from "./icons/TailwindIcon";
 
 export default function SkillsSectionMobile() {
   return (
@@ -17,11 +22,36 @@ export default function SkillsSectionMobile() {
           <AccordionContent>
             <div className="p-2">
               <ul className="px-4 text-xl font-light flex flex-col gap-3">
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Typescript</li>
-                <li>Tailwind</li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <JavaScriptIcon size={20} />
+                    <p>Javascript</p>{" "}
+                  </div>{" "}
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <ReactIcon size={20} />
+                    <p>React.js</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <NextIcon size={20} />
+                    <p>Next.js</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <TypeScriptIcon size={20} />
+                    <p>Typescript</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center gap-2">
+                    <TailwindIcon size={24} />
+                    <p>Tailwind</p>
+                  </div>
+                </li>
               </ul>
             </div>
           </AccordionContent>
