@@ -20,20 +20,20 @@ export default function Home() {
         <HeroSection />
       </div>
 
-      <div className="max-md:hidden mt-8">
+      <div className="max-md:hidden mt-8" id="skills">
         <SkillsSection />
       </div>
 
-      <div className="md:hidden mt-8">
+      <div className="md:hidden mt-8" id="skills">
         <SkillsSectionMobile />
       </div>
 
-      <div className="mb-12">
+      <div className="mb-12" id="project">
         <Project />
       </div>
 
-      <div>
-        <Contact/>
+      <div id="contact">
+        <Contact />
       </div>
     </PageContainer>
   );

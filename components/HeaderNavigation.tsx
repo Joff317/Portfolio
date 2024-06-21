@@ -15,22 +15,22 @@ export default function HeaderNavigation() {
     <NavigationMenu>
       <NavigationMenuList className="gap-4">
         <NavigationMenuItem>
-          <Link href="/skills" legacyBehavior passHref>
-            <NavigationMenuLink className="max-md:hidden">
+          <Link href="#skills" legacyBehavior passHref>
+            <NavigationMenuLink className="max-md:hidden italic text-xl">
               Skills
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/project" legacyBehavior passHref>
-            <NavigationMenuLink className="max-md:hidden">
+          <Link href="#project" legacyBehavior passHref>
+            <NavigationMenuLink className="max-md:hidden italic text-xl">
               Project
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/project" legacyBehavior passHref>
-            <NavigationMenuLink className="max-md:hidden">
+          <Link href="#contact" legacyBehavior passHref>
+            <NavigationMenuLink className="max-md:hidden italic text-xl">
               Contact
             </NavigationMenuLink>
           </Link>
