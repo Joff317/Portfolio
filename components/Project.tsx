@@ -13,9 +13,13 @@ import {
 export default function Project() {
   return (
     <PageContainer className="mt-20 px-4">
-      <p className="text-5xl">Project</p>
+      <div className="flex flex-row items-center">
+        <div className="flex-grow border-t border-gray-400"></div>
+        <p className="text-5xl mx-8 italic">Project</p>
+        <div className="flex-grow border-t border-gray-400"></div>
+      </div>
 
-      <div className="mt-4 px-3 flex md:flex-row md:justify-between gap-3 flex-col max-md:items-center max-md:px-2">
+      <div className="mt-9 px-3 flex md:flex-row md:justify-between gap-3 flex-col max-md:items-center max-md:px-2">
         {/* Première carte */}
         <SpacerCard />
 
