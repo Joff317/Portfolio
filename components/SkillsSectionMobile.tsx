@@ -9,9 +9,14 @@ import {
 export default function SkillsSectionMobile() {
   return (
     <PageContainer className="p-4">
+      <div className="flex flex-row items-center">
+        <div className="flex-grow border-t border-gray-400"></div>
+        <p className="text-5xl mx-8 italic">Skills</p>
+        <div className="flex-grow border-t border-gray-400"></div>
+      </div>
       <Accordion type="single" collapsible>
         <AccordionItem className="border-none" value="item-1">
-          <AccordionTrigger className="flex border-none hover:no-underline text-2xl">
+          <AccordionTrigger className="flex border-none hover:no-underline text-2xl italic">
             Front-end
           </AccordionTrigger>
           <AccordionContent>
@@ -29,7 +34,7 @@ export default function SkillsSectionMobile() {
       </Accordion>
       <Accordion type="single" collapsible>
         <AccordionItem className="border-none" value="item-1">
-          <AccordionTrigger className="hover:no-underline text-2xl">
+          <AccordionTrigger className="hover:no-underline text-2xl italic">
             Back-end
           </AccordionTrigger>
           <AccordionContent>
@@ -45,7 +50,7 @@ export default function SkillsSectionMobile() {
       </Accordion>
       <Accordion type="single" collapsible>
         <AccordionItem className="border-none" value="item-1">
-          <AccordionTrigger className="hover:no-underline text-2xl">
+          <AccordionTrigger className="hover:no-underline text-2xl italic">
             Tools
           </AccordionTrigger>
           <AccordionContent>
