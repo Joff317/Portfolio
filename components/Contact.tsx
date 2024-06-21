@@ -5,6 +5,7 @@ import { Textarea } from "./ui/textarea";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
+import { SendIcon } from "./icons/Send";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -16,11 +17,11 @@ export default function Contact() {
     if (form.current) {
       emailjs
         .sendForm(
-          `${process.env.SERVICE_ID_KEY}`,
-          `${process.env.TEMPLATE_ID_KEY}`,
+          process.env.NEXT_PUBLIC_SERVICE_ID_KEY as string,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID_KEY as string,
           form.current,
           {
-            publicKey: `${process.env.PUBLIC_ID_KEY}`,
+            publicKey: process.env.NEXT_PUBLIC_ID_KEY as string,
           }
         )
         .then(
@@ -41,12 +42,16 @@ export default function Contact() {
 
   return (
     <PageContainer>
-      <p className="text-5xl">Contact</p>
+      <div className="flex flex-row items-center">
+        <div className="flex-grow border-t border-gray-400"></div>
+        <p className="text-5xl mx-8 italic">Contact</p>
+        <div className="flex-grow border-t border-gray-400"></div>
+      </div>
 
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="mx-auto flex flex-col gap-5 max-w-[700px] justify-center items-center mt-4 px-12"
+        className="mx-auto flex flex-col gap-5 max-w-[700px] justify-center items-center mt-9 px-12"
       >
         <Input
           type="text"
@@ -77,8 +82,11 @@ export default function Contact() {
           className=""
         />
 
-        <Button type="submit" className=" bg-blue-400 hover:bg-blue-300">
-          Submit
+        <Button type="submit" className="bg-blue-400 hover:bg-blue-300 gap-4">
+          <div className="flex flex-row gap-2 items-center">
+            <p>Submit</p>
+            <SendIcon size={16} />
+          </div>
         </Button>
       </form>
 
