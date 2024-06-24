@@ -12,8 +12,26 @@ import SkillsSection from "@/components/SkillsSection";
 import SkillsSectionMobile from "@/components/SkillsSectionMobile";
 import Project from "@/components/Project";
 import Contact from "@/components/Contact";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectCards = document.querySelectorAll(".project-card");
+
+      projectCards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add("animate-fade-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <PageContainer className="p-4 flex flex-col">
       <div className="mt-8">
