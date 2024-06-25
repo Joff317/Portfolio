@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import HeaderNavigation from "@/components/HeaderNavigation";
 import PageContainer from "@/components/PageContainer";
 import { GithubIcon } from "@/components/icons/GithubIcon";
@@ -12,28 +13,21 @@ import SkillsSection from "@/components/SkillsSection";
 import SkillsSectionMobile from "@/components/SkillsSectionMobile";
 import Project from "@/components/Project";
 import Contact from "@/components/Contact";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const projectCards = document.querySelectorAll(".project-card");
-
-      projectCards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          card.classList.add("animate-fade-in");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // Déclencher l'animation après le montage du composant
+    setIsLoaded(true);
   }, []);
   return (
-    <PageContainer className="p-4 flex flex-col">
+    <PageContainer
+      className={`p-4 flex flex-col transition-transform duration-1000 ease-in-out ${
+        isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
+      }`}
+    >
       <div className="mt-8">
         <HeroSection />
       </div>
