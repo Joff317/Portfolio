@@ -7,7 +7,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import businessman from "../public/businessman.png";
 import Link from "next/link";
 import Image from "next/image";
-import mypicture from "../public/IMG.png"
+import mypicture from "../public/IMG.png";
 
 export default function HeroSection() {
   return (
@@ -27,11 +27,12 @@ export default function HeroSection() {
       </div>
       <p className="text-2xl">
         {" "}
-        <strong>Fullstack Web Developer.</strong> I'm making website and web
-        application. I like innovating project with human value Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Vero necessitatibus
-        blanditiis quaerat ullam tempore, molestiae corrupti eius quasi magnam
-        earum!
+        <strong>As A Passionate Fullstack Web Developer.</strong> I am dedicated
+        to creating innovative projects that embody human, societal, and
+        environmental values. I strive to make a positive impact through
+        technology, bringing to life solutions that not only advance our digital
+        world but also contribute to the well-being of our communities and the
+        planet.
       </p>
       <div className="mt-2 flex flex-row gap-2">
         <Link href="https://github.com/Joff317">
