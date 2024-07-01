@@ -14,14 +14,20 @@ export default function ResponsiveMenu() {
 
       <SheetContent side="left">
         <div className="flex flex-col gap-4">
-          <Link href="/buy">
-            <Button variant="ghost">Skills</Button>
+          <Link href="#skills" passHref legacyBehavior>
+            <Button variant="ghost" className="italic">
+              Skills
+            </Button>
           </Link>
-          <Link href="/buy">
-            <Button variant="ghost">Project</Button>
+          <Link href="#project" passHref legacyBehavior>
+            <Button variant="ghost" className="italic">
+              Project
+            </Button>
           </Link>
-          <Link href="/buy">
-            <Button variant="ghost">Contact</Button>
+          <Link href="#contact" passHref legacyBehavior>
+            <Button variant="ghost" className="italic">
+              Contact
+            </Button>
           </Link>
         </div>
       </SheetContent>
