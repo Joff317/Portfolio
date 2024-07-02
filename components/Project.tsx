@@ -15,11 +15,11 @@ export default function Project() {
     <PageContainer className="mt-20 px-4">
       <div className="flex flex-row items-center">
         <div className="flex-grow border-t border-gray-400"></div>
-        <p className="text-5xl mx-8 italic">Project</p>
+        <p className="text-5xl mx-8 italic">Projects</p>
         <div className="flex-grow border-t border-gray-400"></div>
       </div>
 
-      <div className="mt-9 px-3 flex md:flex-row md:justify-between gap-3 flex-col max-md:items-center max-md:px-2">
+      <div className="mt-9 px-3 flex md:flex-row md:justify-evenly flex-col max-md:items-center max-md:px-2">
         {/* Première carte */}
         <SpacerCard />
 
@@ -27,7 +27,7 @@ export default function Project() {
         <SocialMooviesCard />
 
         {/* Troisième carte */}
-        <PlantPediaCard />
+        {/* <PlantPediaCard /> */}
       </div>
     </PageContainer>
   );

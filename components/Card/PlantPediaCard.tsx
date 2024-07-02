@@ -18,7 +18,9 @@ export default function PlantPediaCard() {
         <CardDescription className="text-white">icon</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
-        <p className="text-2xl">Plantpedia</p>
+        <p className="text-2xl">
+          Plantpedia (API TREFLE IO EN COURS DE MAINTENANCE)
+        </p>
         <p>
           A website to check properties of different plants around the world
         </p>
