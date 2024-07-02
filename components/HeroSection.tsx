@@ -18,7 +18,7 @@ export default function HeroSection() {
           <Image
             src={mypicture}
             alt="me"
-            className="w-[70px] h-[80px] max-md:w-[50px] max-md:h-[50px]"
+            className="w-[70px] h-[80px] max-md:w-[50px] max-md:h-[50px] rounded-3xl shadow-xl"
           />
           <p className="text-5xl max-md:text-4xl text-text">
             Joffrey Freixanet
