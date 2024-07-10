@@ -82,7 +82,7 @@ export default function Contact() {
           className=""
         />
 
-        <Button type="submit" className="bg-blue-400 hover:bg-blue-300 gap-4">
+        <Button type="submit" className="bg-purple-700 hover:bg-purple-500 gap-4">
           <div className="flex flex-row gap-2 items-center">
             <p>Submit</p>
             <SendIcon size={16} />
